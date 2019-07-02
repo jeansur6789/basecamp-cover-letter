@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/Graphik.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/Graphik-Bold.woff2) format('woff2');
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #1d2d35;
+  font-family: 'Graphik';
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+h1,
+h2,
+strong {
+  font-family: 'Graphik Bold';
+}
+
+a {
+  color: #1d2d35;
+}
+
+a:hover {
+  color: #038930;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li,
+.questions-nav li {
+  list-style-type: none;
+}
+
+.ingredients li {
+  margin-left: 40px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 5px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.header-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  bottom: 0;
+  background: url(images/header-edge-bottom.svg) center bottom/105% no-repeat;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.header-logo {
+  cursor: pointer;
+  display: block;
+  float: left;
+  width: 215px;
+  transition: all 0.1s ease-in-out;
+}
+
+.header-logo:hover {
+  transform: scale(1.08, 1.08);
+}
+
+.top-nav {
+  float: right;
+}
+
+.top-nav li {
+  display: inline-block;
+}
+
+.top-nav li a {
+  letter-spacing: -0.35px;
+  font-family: 'Graphik Bold';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button {
+  background: #1d2d35;
+  border-radius: 50px;
+  color: #fff;
+  padding: 9px 18px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #038930;
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+}
+
+h1 {
+  font-size: 86px;
+  line-height: 90px;
+  letter-spacing: -5px;
+  padding: 86px 0 20px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1.6px;
+  padding: 80px 0 10px;
+}
+
+hr {
+  display: block;
+  clear: both;
+  width: 33%;
+  margin: 80px auto 0;
+  border: 0;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 1200px;
+  margin: 200px auto 50px;
+}
